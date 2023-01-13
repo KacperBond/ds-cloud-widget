@@ -1,0 +1,1 @@
+ng build --prod --output-dir docs --base-href "ds-cloud-widget"
