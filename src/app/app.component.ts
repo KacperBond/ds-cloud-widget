@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ds-cloud-widget';
+
+
+
+  test(){
+    alert("TEST ALERT");
+  }
 }
