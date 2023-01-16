@@ -1,1 +1,1 @@
-ng build --prod --output-path docs --base-href /ds-cloud-widget/
+ng build --output-path docs --base-href /ds-cloud-widget/

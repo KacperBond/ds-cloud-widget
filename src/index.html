@@ -7,6 +7,20 @@
       <base href="/">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- <script type="text/javascript"
+            src="//uwa.netvibes.com/lib/c/UWA/js/UWA_Standalone_Alone.js"></script> -->
+
+        <!-- Application JavaScript Source -->
+        <script type="text/javascript">
+            var MyWidget = {
+                onLoad: function() {
+                    widget.setBody('Hello World!');
+                }
+            };
+            widget.addEvent('onLoad', MyWidget.onLoad);
+        </script>
+
     </head>
     <body>
       <app-root></app-root>
