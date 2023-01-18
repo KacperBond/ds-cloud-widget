@@ -1,1 +1,33 @@
-<html><head><link rel="stylesheet" href="styles.31d6cfe0d16ae931b73c.css"><script src="runtime.940711345972b1c1a0e1.js" defer></script><script src="polyfills.cd8aab12621783dc9f49.js" defer></script><script src="main.9e8e582e242b8543ccfb.js" defer></script></head><body><app-root></app-root></body></html>
+<!DOCTYPE html><html><head>
+      <meta charset="utf-8">
+      <title>DsCloudWidget</title>
+      <base href="/ds-cloud-widget/">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+      <script>
+        /* global widget */
+        ( function () {
+            'use strict'; 
+             var myWidget = {
+                onRefresh: function() {
+                    var value= -1 ;
+                    var textOp='' ;
+             if ( operation === 'NFirst'  )  {
+                textOp='Sum first 10 numbers';
+                value = unitaryOp.nFirst(10); 							   
+             } 
+             var textToDisplay="The operation " + textOp + ' is = ' + value ;
+             textToDisplay = textToDisplay + "Select Refresh/Edit menu to refresh/choose another operation"
+             widget.setBody(textToDisplay);					
+                 }
+             };
+         widget.addEvent('onRefresh', myWidget.onLoad);
+        }() ) ;
+     </script>
+
+    <link rel="stylesheet" href="styles.31d6cfe0d16ae931b73c.css"></head>
+    <body>
+      <app-root></app-root>
+    <script src="runtime.940711345972b1c1a0e1.js" defer></script><script src="polyfills.cd8aab12621783dc9f49.js" defer></script><script src="main.56df55438c7ca8d19f08.js" defer></script>
+</body></html>
